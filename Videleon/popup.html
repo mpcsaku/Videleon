@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title data-i18n="LabelVideoSettings">🎥 動画調整</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <!-- h2もflexboxで中央揃えにするためspanで囲むのがオススメ！ -->
+    <h2>
+      <img src="icons/icon48.png" alt="icon" class="header-icon" />
+      <span>Videleon</span>
+    </h2>
+
+    <!-- Brightness -->
+    <div class="control">
+      <!-- ↓ このdivで囲む！ -->
+      <div class="label-container">
+        <label for="brightness" data-i18n="LabelBrightness">💡 明るさ</label>
+        <span id="brightnessValue">100%</span>
+      </div>
+      <input type="range" id="brightness" min="0" max="500" value="100" />
+    </div>
+
+    <!-- Speed -->
+    <div class="control">
+      <!-- ↓ このdivで囲む！ -->
+      <div class="label-container">
+        <label for="speed" data-i18n="LabelSpeed">⏩ 再生速度</label>
+        <span id="speedValue">1.00x</span>
+      </div>
+      <input type="range" id="speed" min="0.25" max="5" step="0.05" value="1" />
+    </div>
+
+    <!-- Volume Boost -->
+    <div class="control">
+      <!-- ↓ このdivで囲む！ -->
+      <div class="label-container">
+        <label for="volume" data-i18n="LabelVolumeBoost">🔊 音量ブースト</label>
+        <span id="volumeValue">100%</span>
+      </div>
+      <input type="range" id="volume" min="50" max="500" value="100" />
+    </div>
+
+    <!-- Voice Boost -->
+    <div class="control">
+      <!-- ↓ このdivで囲む！ -->
+      <div class="label-container">
+        <label for="voiceBoost" data-i18n="LabelVoiceBoost">🎤 ボイスブースト</label>
+        <span id="voiceBoostValue">Off</span>
+      </div>
+      <input type="range" id="voiceBoost" min="0" max="100" step="1" value="0" />
+    </div>
+    <div class="control">
+      <div class="transform-buttons">
+        <button id="rotateBtn" data-i18n="LabelRotate">💫 90度回転</button>
+        <button id="flipBtn" data-i18n="LabelFlip">🪞 左右反転</button>
+      </div>
+    </div>
+    <div class="control">
+      <div class="label-container">
+      <label data-i18n="LabelLoopPlayback">🔁 ループ再生</label>
+      </div>
+      <div class="loop-buttons">
+        <button id="setA_Btn">Start</button>
+        <button id="setB_Btn">End</button>
+        <button id="clearLoop_Btn" data-i18n="Unloop">ループ解除</button>
+      </div>
+    </div>
+
+
+    <button id="resetBtn" data-i18n="LabelReset">🔄 リセット</button>
+
+    <!-- 変更後 ✨ -->
+    <script src="popup.js" type="module"></script>
+  </body>
+</html>

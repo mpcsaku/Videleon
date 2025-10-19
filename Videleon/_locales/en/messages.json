@@ -1,0 +1,51 @@
+{
+    "extName": {
+    "message": "Videleon: Easy Video Control & Filter",
+    "description": "拡張タイトル"
+  },
+  "extDesc": {
+    "message": "Includes Video Brightness Adjustment, Playback Speed Control, Volume Boost (+500%), and Voice Boost.",
+    "description": "拡張説明"
+  },
+  "LabelVideoSettings": {
+    "message": "🎥 Video Settings",
+    "description": "動画の再生や表示に関する設定メニューのタイトル。"
+  },
+  "LabelBrightness": {
+    "message": "💡 Brightness",
+    "description": "画面や動画の明るさを調整する設定項目のラベル。"
+  },
+  "LabelSpeed": {
+    "message": "⏩ Speed",
+    "description": "再生速度を示す簡潔なラベル。"
+  },
+  "LabelVolumeBoost": {
+    "message": "🔊 Volume Boost",
+    "description": "動画の音量を最大値以上に引き上げる機能の設定項目のラベル。"
+  },
+  "LabelVoiceBoost": {
+    "message": "🎤 Voice Boost",
+    "description": "動画内の音声のうち、人の声や会話の音量を強調する機能の設定項目のラベル。"
+  },
+    "LabelReset": {
+    "message": "🔃 Reset",
+    "description": "設定内容を初期化する設定項目のラベル。"
+  
+  },
+  "LabelRotate": {
+    "message": "💫 Rotate 90°",
+    "description": "動画画面を90度回転させるアクションのラベル。"
+  },
+  "LabelFlip": {
+    "message": "🪞 Flip Horizontal",
+    "description": "動画画面を左右（水平方向）に反転させるアクションのラベル。"
+  },
+  "LabelLoopPlayback": {
+    "message": "🔁 Loop Playback",
+    "description": "動画を繰り返し再生する機能の設定項目のラベル。"
+  },
+  "Unloop": {
+    "message": "Unloop",
+    "description": "ループ再生を解除するボタンのラベル。'Loop'の対義語として使用。"
+  }
+}

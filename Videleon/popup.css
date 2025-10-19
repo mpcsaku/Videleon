@@ -1,0 +1,235 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  padding: 15px;
+  width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ffff88;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+@keyframes neon-title-pulse {
+  0%, 100% {
+    /* 通常時の光 */
+    text-shadow:
+      0 0 4px #fff,
+      0 0 10px #00ffff,
+      0 0 20px #00ffff;
+  }
+  50% {
+    /* 一番強く光る時の光 */
+    text-shadow:
+      0 0 8px #fff,
+      0 0 20px #00aaff,
+      0 0 35px #00aaff;
+  }
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* h2の中のspanタグ（"Videleon"の文字）にスタイルを適用 */
+h2 span {
+  color: #00ffff; /* 文字の基本色 */
+  font-weight: bold;
+  /* アニメーションを適用！ 2.5秒かけてゆっくり明滅を繰り返す */
+  animation: neon-title-pulse 2.5s infinite ease-in-out;
+}
+
+.header-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  filter: drop-shadow(0 0 3px #00ffff);
+}
+
+
+.control {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #00ffff;
+  background: linear-gradient(to right, #00ffff, #0077ff);
+  height: 6px;
+  border-radius: 3px;
+    /* ネオン */
+  box-shadow: 0 0 5px #00ffff, 
+              0 0 10px #00ffff, 
+              0 0 15px #00aaff;
+  transition: box-shadow 0.2s; /* ホバー時に滑らかに変化させる */
+  
+  
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* デフォルトスタイルを解除 */
+  appearance: none;
+  width: 18px; /* ツマミのサイズ */
+  height: 18px;
+  background: #00ffff; /* ツマミの基本色 */
+  border-radius: 50%; /* 円形にする */
+  border: 2px solid #fff; /* 白い縁取りでクッキリさせる */
+  cursor: pointer;
+  /* ネオン*/
+  box-shadow: 0 0 5px #00ffff, 
+              0 0 10px #00ffff, 
+              0 0 15px #00aaff;
+  transition: box-shadow 0.2s; /* ホバー時に滑らかに変化させる */
+}
+
+/* --- Firefox用のツマミのスタイル --- */
+input[type="range"]::-moz-range-thumb {
+  width: 18px; 
+  height: 18px;
+  background: #00ffff;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+  box-shadow: 0 0 5px #00ffff, 
+              0 0 10px #00ffff, 
+              0 0 15px #00aaff;
+  transition: box-shadow 0.2s;
+}
+
+
+
+/* リセットボタン */
+#resetBtn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 4px 10px;
+  font-size: 12px;
+  background-color: #00ffff;
+  color: #1e1e1e;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s, text-shadow 0.2s; /* transitionに影も追加 */
+  
+  /* --- ▼▼▼ネオン ▼▼▼ --- */
+  border: 1px solid #00ffff; /* 輪郭をはっきりさせるための枠線 */
+  background-color: #1e1e1e; /* 背景を暗くして文字を光らせる */
+  color: #00ffff; /* 文字色をネオンカラー */
+  
+  /* ボタン自体に影をつけて光らせる */
+  box-shadow: 0 0 3px #00ffff, 
+              inset 0 0 3px #00ffff; 
+              
+  /* 文字に影をつけて光らせる */
+  text-shadow: 0 0 2px #00ffff;
+}
+
+#resetBtn:hover {
+  background-color: #00ffff; 
+  color: #1e1e1e; /* 文字色を暗くする */
+
+  /* さらに強く光らせる！ */
+  box-shadow: 0 0 8px #00ffff,
+              inset 0 0 5px #00ffff;
+              
+  text-shadow: 0 0 5px #1e1e1e;
+}
+
+
+/* ラベルと値を囲む親要素のスタイル */
+.label-container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 5px;/
+}
+
+/* 値（100%とか）のスタイルを直接指定 */
+#brightnessValue,
+#speedValue,
+#volumeValue,
+#voiceBoostValue {
+  font-weight: normal;
+  color: #00ffff;
+}
+
+
+.transform-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transform-buttons button {
+  width: 48%;
+  padding: 6px 0;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  /* transitionに影も追加！ */
+  transition: background-color 0.2s, box-shadow 0.2s, text-shadow 0.2s; 
+
+  /* ネオン化 */
+  border: 1px solid #00ffff;
+  background-color: #1e1e1e; /* 背景を暗く */
+  color: #00ffff; /* 文字をネオンカラーに */
+  
+  /* ボタン自体に影をつけて光らせる */
+  box-shadow: 0 0 3px #00ffff, 
+              inset 0 0 3px #00ffff; /* 内側にも影 */
+              
+  /* 文字に影をつけて光らせる */
+  text-shadow: 0 0 2px #00ffff;
+}
+
+.transform-buttons button:hover {
+  /* ホバー時は背景と文字色を反転 */
+  background-color: #00ffff;
+  color: #1e1e1e;
+
+  /* さらに強く光らせる！ */
+  box-shadow: 0 0 8px #00ffff,
+              inset 0 0 5px #00ffff;
+              
+  text-shadow: 0 0 5px #1e1e1e;
+}
+
+
+
+.loop-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loop-buttons button {
+  width: 31%;
+  padding: 6px 0;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s, box-shadow 0.2s, text-shadow 0.2s;
+  border: 1px solid #00ffff;
+  background-color: #1e1e1e;
+  color: #00ffff;
+  box-shadow: 0 0 3px #00ffff, inset 0 0 3px #00ffff;
+  text-shadow: 0 0 2px #00ffff;
+}
+
+.loop-buttons button:hover {
+  background-color: #00ffff;
+  color: #1e1e1e;
+  box-shadow: 0 0 8px #00ffff, inset 0 0 5px #00ffff;
+  text-shadow: 0 0 5px #1e1e1e;
+}
+
