@@ -1,66 +1,65 @@
-<h1 align="center">
-  <img src="images/Videleon.png" alt="Videleon Icon" width="60"> 
-  Videleon Video Filter
-</h1>
-
-<p align="center">
-  <strong>YouTube, Netflix, Vimeo... あらゆるWeb上の動画を究極に制御し、楽しむためのChrome拡張機能！</strong>
-</p>
-
-<p align="center">
-  <a href="https://github.com/YourGitHubID/Videleon/blob/main/LICENSE" target="_blank">
-    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT">
-  </a>
-  <a href="https://chrome.google.com/webstore/detail/your-extension-id" target="_blank">
-    <img src="https://img.shields.io/badge/Chrome%20Web%20Store-Install-blue" alt="Chrome Web Store">
-  </a>
-</p>
-
-<hr style="border-top: 3px solid #00ffff; box-shadow: 0 0 5px #00ffff;">
-
-<h2 style="color: #00ffff; text-shadow: 0 0 5px #00ffff;">✨ 主な機能 (Core Features)</h2>
-
-<p>
-  Videleonは、視聴体験を向上させるための強力で直感的なツールを提供します。
-</p>
-
-<ul>
-  <li style="color: #f0f0f0;"><strong>💡 明るさ・コントラスト調整:</strong> 暗い動画でも細部までハッキリと！（0%〜500%まで調整可能）</li>
-  <li style="color: #f0f0f0;"><strong>⏩ 再生速度制御:</strong> 0.25xから5.0xまで、細かいステップで調整可能。</li>
-  <li style="color: #f0f0f0;"><strong>🔊 音量ブースト:</strong> 最大500%まで音量を増幅！小さな音も聞き逃さない。（Web Audio API使用）</li>
-  <li style="color: #f0f0f0;"><strong>🎤 ボイスブースト（EQ）:</strong> 特定の周波数帯域を強調し、人の声をクリアに際立たせます。</li>
-  <li style="color: #f0f0f0;"><strong>💫 動画の回転・反転:</strong> 画面を90度回転したり、左右反転したりして、ユニークな視点を実現。</li>
-  <li style="color: #f0f0f0;"><strong>🔁 A-B ループ再生:</strong> 特定の区間（A地点からB地点）を繰り返し再生し、語学学習やダンス練習をサポート。</li>
-</ul>
-
-<hr style="border-top: 1px solid #333;">
-
-<h2 style="color: #00ffff; text-shadow: 0 0 5px #00ffff;">🔧 インストール方法 (Installation)</h2>
-
-<h3 style="color: #00aaff; text-shadow: 0 0 3px #00aaff;">Chrome Web Storeから</h3>
-<ol>
-  <li><a href="https://chrome.google.com/webstore/detail/your-extension-id" target="_blank" style="color: #00ffff;">Chrome Web Store</a> にアクセスします。</li>
-  <li>「Chromeに追加」ボタンをクリックします。</li>
-</ol>
 
 
 
-<hr style="border-top: 1px solid #333;">
+## <img src="images/Videleon.png" alt="Videleon Icon" width="60">  Videleon: Video Filter
 
-<h2 style="color: #00ffff; text-shadow: 0 0 5px #00ffff;">💡 使い方 (Usage)</h2>
+**Videleon** is a versatile Chrome extension designed to enhance your viewing experience for any video (`<video>` element) in your browser. You can fully control every aspect of the video, including screen brightness, playback speed, volume, video rotation/flipping, and **loop playback** for a specified section.
 
-<p>再生中の動画があるタブで、ブラウザのツールバーにあるVideleonのアイコン (
-  <img src="images\Videleon.png" alt="Icon" width="16" style="vertical-align: middle;">
-) をクリックするだけ！ポップアップから直感的に操作できます。</p>
+<img src="images/Screenshot.png" alt="Videleon Popup UI Screenshot" style="max-width: 90%; border: 3px solid #00ffff; box-shadow: 0 0 10px #00ffff;">
 
-<p align="center">
-  <img src="images/Screenshot.png" alt="Videleon Popup UI Screenshot" style="max-width: 90%; border: 3px solid #00ffff; box-shadow: 0 0 10px #00ffff;">
-</p>
+---
 
-<hr style="border-top: 1px solid #333;">
+## 💡 Key Features
 
-<h2 style="color: #00ffff; text-shadow: 0 0 5px #00ffff;">🤝 貢献 (Contributing)</h2>
+| Category | Feature Name | Detail |
+| :--- | :--- | :--- |
+| **Video Adjustment** | **💡 Brightness** | Adjust the video's brightness in real-time. Useful for brightening dark scenes or dimming the screen. (0% to 500%) |
+| **Playback Control** | **⏩ Playback Speed** | Fine-tune the video playback rate in small increments (0.05x). Convenient for speed listening or slow-motion viewing. (0.25x to 5.00x) |
+| **Volume Enhancement** | **🔊 Volume Boost** | Boost the volume beyond the standard limit, up to a maximum of **500%**. Never miss small sounds. |
+| **Audio Correction** | **🎤 Voice Boost** | Uses an equalizer (BiquadFilter) to emphasize the frequency range of human speech, making conversations clearer and easier to understand. |
+| **Video Transformation** | **💫 90-Degree Rotation** | Rotates the video image in 90-degree steps. Corrects the orientation of videos shot vertically. |
+| **Video Transformation** | **🪞 Horizontal Flip** | Flips the video image horizontally. Helpful for dance mirror practice or correcting spatial perception. |
+| **Section Specification** | **🔁 Loop Playback** | By setting a **Start (Point A)** and **End (Point B)**, a specific video segment will automatically repeat. Ideal for practicing phrases or reviewing key moments repeatedly. |
+| **Reset** | **🔄 Reset** | Instantly reverts all adjustments (brightness, speed, volume, rotation, loop) to their default values. |
 
-<p>バグ報告、機能提案、コードへの貢献は大歓迎です！<br></p>
+---
 
-<h2 style="color: #00ffff; text-shadow: 0 0 5px #00ffff;">📜 ライセンス (License)</h2>
+## ⚙️ Control and Convenience
+
+* **Intuitive UI:** The popup screen features a stylish design based on neon colors.
+* **Mouse Wheel Operation:** Simply hover the cursor over a slider to **fine-tune the value using the mouse wheel**.
+* **AudioContext Utilization:** Volume Boost and Voice Boost are implemented using the Web Audio API (**AudioContext**), providing high quality and flexible audio processing.
+* **Multi-Language Support:** Internationalization (i18n) is supported via `__MSG_extName__` and `data-i18n` specifications.
+
+Use Videleon to make your video viewing experience more comfortable and personal!
+#
+
+# <img src="images/Videleon.png" alt="Videleon Icon" width="60">  Videleon: Video Filter
+
+**Videleon**は、あなたのブラウザ上のあらゆる動画（`<video>`要素）の視聴体験を向上させるための、多機能なChrome拡張機能です。画面の明るさ、再生速度、音量、さらには映像の回転・反転や、指定区間の**ループ再生**まで、動画のあらゆる側面を思い通りにコントロールできます。
+
+ <img src="images/Screenshot.png" alt="Videleon Popup UI Screenshot" style="max-width: 90%; border: 3px solid #00ffff; box-shadow: 0 0 10px #00ffff;">
+
+## 💡 主要機能一覧
+
+| カテゴリ | 機能名 | 詳細 |
+| :--- | :--- | :--- |
+| **映像調整** | **💡 明るさ (Brightness)** | 動画の明るさをリアルタイムで調整。暗いシーンを見やすくしたり、逆に画面を落としたりできます。（0%〜500%） |
+| **再生制御** | **⏩ 再生速度 (Speed)** | 動画の再生速度を細かく（0.05刻みで）調整。速聴やスロー再生に便利です。（0.25x〜5.00x） |
+| **音量強化** | **🔊 音量ブースト (Volume Boost)** | 標準音量を超えて、最大**500%**まで音量をブーストします。小さな音も聞き逃しません。 |
+| **音質補正** | **🎤 ボイスブースト (Voice Boost)** | イコライザー（BiquadFilter）を用いて、人の話し声が集中する周波数帯域を強調し、会話を聞き取りやすくします。 |
+| **映像変換** | **💫 90度回転** | 動画の映像を90度単位で回転させます。縦向きで撮影された動画などを正しい向きに直せます。 |
+| **映像変換** | **🪞 左右反転** | 動画の映像を左右に反転させます。ダンスの鏡合わせ練習や、利き手補正などに役立ちます。 |
+| **区間指定** | **🔁 ループ再生** | **Start (A地点)** と **End (B地点)** を指定することで、動画の特定区間を自動で繰り返し再生します。フレーズの練習や、重要な場面の反復確認に最適です。 |
+| **リセット** | **🔄 リセット** | すべての調整値（明るさ、速度、音量、回転、ループ）を一瞬で初期値に戻します。 |
+
+---
+
+## ⚙️ コントロールの利便性
+
+* **直感的なUI:** ポップアップ画面はネオンカラーを基調としたスタイリッシュなデザイン。
+* **マウスホイール操作:** スライダーにカーソルを合わせるだけで、**マウスホイールで値を微調整**できます。
+* **AudioContext利用:** 音量ブーストやボイスブーストは、ウェブオーディオAPI（AudioContext）を使用して実現しており、高い品質と柔軟な処理を提供します。
+* **多言語対応:** `__MSG_extName__` や `data-i18n` の指定により、国際化（i18n）に対応しています。
+
+Videleonで、あなたの動画視聴体験をより快適に、よりパーソナルなものにしましょう！
